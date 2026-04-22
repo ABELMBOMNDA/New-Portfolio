@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1776819303779,
+    "name": "abel mbomnda",
+    "email": "mbomndabel6@gmail.com",
+    "subject": "test",
+    "message": "hello boy",
+    "createdAt": "2026-04-22T00:55:03.779Z"
+  },
+  {
+    "id": 1776817596819,
+    "name": "abel",
+    "email": "mbomndabel6@gmail.com",
+    "subject": "hi",
+    "message": "try and see",
+    "createdAt": "2026-04-22T00:26:36.819Z"
+  }
+]
