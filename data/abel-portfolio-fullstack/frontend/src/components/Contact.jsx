@@ -24,18 +24,19 @@ function Contact({ contactLinks }) {
     setStatus({ type: '', message: '' })
 
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ access_key: '440f15fd-af1e-444f-8234-e7092b64177c', ...formData }),
       })
 
-      if (!response.ok) throw new Error('Unable to send message.')
+      const result = await response.json()
+      if (!result.success) throw new Error('Unable to send message.')
 
-      setStatus({ type: 'success', message: 'Message sent successfully.' })
+      setStatus({ type: 'success', message: 'Message sent! I will get back to you soon.' })
       setFormData({ name: '', email: '', subject: '', message: '' })
     } catch (error) {
-      setStatus({ type: 'error', message: error.message || 'Something went wrong.' })
+      setStatus({ type: 'error', message: 'Something went wrong. Please try again.' })
     } finally {
       setIsSubmitting(false)
     }
