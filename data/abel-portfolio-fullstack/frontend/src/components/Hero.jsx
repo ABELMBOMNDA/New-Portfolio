@@ -15,7 +15,7 @@ function Hero({ data }) {
             <a href="#projects" className="button primary">
               View Projects
             </a>
-            <a href={data.resumeLink} className="button secondary" target="_blank" rel="noreferrer" download="Abel Mbomnda Resume.pdf">
+            <a href={data.resumeLink} className="button secondary" target="_blank" rel="noreferrer" download="Mbomnda_Resume_Final.pdf">
               Download Resume
             </a>
             <a href="#contact" className="button ghost">

@@ -30,7 +30,7 @@ function Navbar({ navLinks, activeSection, resumeLink }) {
         </nav>
 
         <div className="nav-actions">
-          <a href={resumeLink} className="button secondary" target="_blank" rel="noreferrer" download="Abel Mbomnda Resume.pdf">
+          <a href={resumeLink} className="button secondary" target="_blank" rel="noreferrer" download="Mbomnda_Resume_Final.pdf">
             Resume
           </a>
 <button type="button" className="menu-toggle" onClick={() => setOpen((prev) => !prev)}>
